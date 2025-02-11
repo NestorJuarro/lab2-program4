@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de mí</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Acerca de mí</h1>
+            <p>Bienvenido a mi página personal. Aquí podrás conocer mis gustos y pasatiempos.</p>
+        </header>
+
+        <main>
+            <section class="event-grid">
+                <div class="event" id="hobby" onclick="showMessage('Hobby favorito: Leer novelas')">
+                    <h2>Hobby favorito</h2>
+                    <p>Clic para ver más</p>
+                    <img src="https://huelvaya.es/wp-content/uploads/2021/08/futbol.jpg" alt="Imagen de futbol" class="event-img">
+                </div>
+                <div class="event" id="food" onmouseover="changeText('¡Me encanta la pizza!')">
+                    <h2>Comida favorita</h2>
+                    <p>Coloca el ratón para ver más</p>
+                    <img src="https://www.pizzahut.com.sv/static/media/images/images/jpg/1_13-06-2024-09-01_MD.jpg" alt="Imagen de pizza" class="event-img">
+                </div>
+                <div class="event" id="movie" onfocus="highlightSection(this)">
+                    <h2>Película o serie favorita</h2>
+                    <p>Presiona para ver más</p>
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/joker-2-joaquin-phoenix-lady-gaga-660d5efa550b3.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*" alt="Imagen de película" class="event-img">
+                </div>
+                <div class="event" id="color" onblur="resetColor(this)">
+                    <h2>Color favorito</h2>
+                    <p>Foco para más info</p>
+                    <img src="https://coloresypunto.wordpress.com/wp-content/uploads/2013/06/colores_y_punto_verde_esmeralda.jpg" alt="Imagen de color" class="event-img">
+                </div>
+                <div class="event" id="artist" ondblclick="showArtistInfo()">
+                    <h2>Artista o deportista favorito</h2>
+                    <p>Doble clic para ver más</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA66qvUnRZ-wY74HZll7QSIOSSVg1fU3PxcQ&s" alt="Imagen de artista" class="event-img">
+                </div>
+                <div class="event" id="country" onkeydown="displayCountryInfo(event)">
+                    <h2>Un país que me gustaría visitar</h2>
+                    <p>Presiona una tecla</p>
+                    <img src="https://www.advantour.com/img/japan/images/index.jpg" alt="Imagen de Japón" class="event-img">
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Hecho con ❤️ por [Nestor ENrique Juarro Quintanilla]</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
